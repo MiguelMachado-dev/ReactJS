@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("alert(\"Hello React!\");\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var soma = function soma(a, b) {\n  return a + b;\n};\n\nalert(soma(5, 3));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
