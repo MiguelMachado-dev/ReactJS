@@ -10,6 +10,7 @@ class App extends Component {
   };
 
   handleClick = () => {
+    // this.state.counter desestruturado
     const { counter } = this.state;
     this.setState({ counter: counter + 1 });
     // this.setState(state => ({ counter: state.counter + 1 }));
