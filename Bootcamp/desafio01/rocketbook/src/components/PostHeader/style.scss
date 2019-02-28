@@ -1,0 +1,25 @@
+.headerPost {
+  display: flex;
+  align-items: center;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .userInfo {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      font-size: 16px;
+      color: #666666;
+    }
+
+    span {
+      font-size: 14px;
+      color: #999999;
+      margin-top: 5px;
+    }
+  }
+}
