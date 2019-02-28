@@ -3,6 +3,15 @@ import PropTypes from "prop-types";
 import { render } from "react-dom";
 
 class Button extends Component {
+  static defaultProps = {
+    children: "Salvar"
+  };
+
+  static propTypes = {
+    onClick: PropTypes.func.isRequired,
+    childen: PropTypes.string
+  };
+
   render() {
     return (
       <a onClick={this.props.onClick} href="">
@@ -11,15 +20,6 @@ class Button extends Component {
     );
   }
 }
-
-Button.defaultProps = {
-  children: "Salvar"
-};
-
-Button.PropTypes = {
-  onClick: PropTypes.func.isRequired,
-  childen: PropTypes.string
-};
 
 class App extends Component {
   handleClick() {
