@@ -1,0 +1,38 @@
+const path = require('path'); // path é padrão do node para corrigir
+// problemas de diretorio
+
+module.exports = {
+  entry: path.resolve(__dirname, 'src', 'index.js'),
+  output: {
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js',
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'public'),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
+    ],
+  },
+};
