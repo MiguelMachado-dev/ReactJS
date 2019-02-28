@@ -1,36 +1,30 @@
-import React, { Component, Fragment } from "react";
-import { render } from "react-dom";
+import React, { Component, Fragment } from 'react';
+import { render } from 'react-dom';
 
-import Button from "./Button";
-import "./style.scss";
+import Button from './Button';
+import './style.scss';
 
 class App extends Component {
   state = {
-    counter: 0
+    counter: 0,
   };
-
-  componentDidMount() {}
-
-  shouldComponentUpdate(nextProps, nextState) {}
-
-  componentWillUnmount(prevProps, prevState) {}
 
   handleClick = () => {
-    this.setState({ counter: this.state.counter + 1 }, () => {
-      console.log(this.state.counter);
-    });
+    const { counter } = this.state;
+    this.setState({ counter: counter + 1 });
     // this.setState(state => ({ counter: state.counter + 1 }));
   };
+
   render() {
-    console.log("render");
+    const { counter } = this.state;
     return (
       <Fragment>
         <h1>Hello Rocketseat</h1>
-        <h2>{this.state.counter}</h2>
+        <h2>{counter}</h2>
         <Button onClick={this.handleClick}>+1</Button>
       </Fragment>
     );
   }
 }
 
-render(<App />, document.getElementById("app"));
+render(<App />, document.getElementById('app'));
