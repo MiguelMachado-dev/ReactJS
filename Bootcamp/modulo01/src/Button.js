@@ -6,9 +6,9 @@ import PropTypes from "prop-types";
 // e para obter acesso as props, passa ela via params
 // Stateless fica menos verboso, muito mais fácil de se ler
 
-const Button = props => {
-  <button onClick={props.onClick}>{props.children}</button>;
-};
+const Button = props => (
+  <button onClick={props.onClick}>{props.children}</button>
+);
 
 Button.defaultProps = {
   children: "Salvar"
