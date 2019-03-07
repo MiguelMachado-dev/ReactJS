@@ -34,7 +34,7 @@ class Main extends Component {
   };
 
   render() {
-    const { repositoryInput } = this.setState;
+    const { repositoryInput } = this.state;
     const { favorites } = this.props;
     return (
       <Fragment>
