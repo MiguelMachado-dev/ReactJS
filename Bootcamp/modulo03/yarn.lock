@@ -8155,6 +8155,11 @@ reactotron-react-js@^3.0.1:
     reactotron-core-client "^2.4.0"
     stacktrace-js "^1.3.1"
 
+reactotron-redux-saga@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/reactotron-redux-saga/-/reactotron-redux-saga-4.2.0.tgz#d37c9f136931a18833bcc70d32dde01ec8d6f98e"
+  integrity sha512-KN8WcWLBtvLpFd29i3MVPPr+sgeKyMWTRbfyeHG+yx1PpMy8IV/zaQR5QFBY3v2JZWLfym9AsILtsOCo+bTisQ==
+
 reactotron-redux@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/reactotron-redux/-/reactotron-redux-3.1.0.tgz#05676499891a3629ce90121fc22ddd4fd96eeafa"
