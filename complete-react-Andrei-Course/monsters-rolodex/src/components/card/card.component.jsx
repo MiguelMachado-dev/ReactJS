@@ -2,7 +2,8 @@ import React from 'react';
 
 import './card.styles.css';
 
-export const Card = ({ name, email, id }) => {
+export const Card = ({ monster }) => {
+  const { name, email, id } = monster;
   return (
     <div className="card-container">
       <img
